@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಪ್ರಾಜೆಕ್ಟ್ ಇಂಡೆಕ್ಸ್ ಸೂಚಿ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>📊 ಪ್ರಾಜೆಕ್ಟ್ ಇಂಡೆಕ್ಸ್ (Excel Grid View)</h2>
+        
+        <!-- ಹುಡುಕುವ ಬಾಕ್ಸ್ (Search Box) -->
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="ವಿಷಯ ಅಥವಾ ಐಡಿ ಹುಡುಕಿ...">
+
+        <!-- ಎಕ್ಸೆಲ್ ಮಾದರಿಯ ಟೇಬಲ್ -->
+        <table id="indexTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ವಿಷಯ / ಮಾಡ್ಯೂಲ್</th>
+                    <th>ವಿವರಣೆ</th>
+                    <th>ಸ್ಥಿತಿ</th>
+                    <th>ಲಿಂಕ್</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>ಪ್ರಾರಂಭಿಕ ಮಾಹಿತಿ</td>
+                    <td>ಪ್ರಾಜೆಕ್ಟ್ ಸೆಟಪ್ ಮತ್ತು ಇನ್‌ಸ್ಟಾಲೇಶನ್</td>
+                    <td><span class="status completed">ಪೂರ್ಣಗೊಂಡಿದೆ</span></td>
+                    <td><a href="./docs/getting-started.html" target="_blank">ಓಪನ್ ಮಾಡಿ</a></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>ಸಿಸ್ಟಮ್ ವಿನ್ಯಾಸ</td>
+                    <td>ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಡೈಗ್ರಾಮ್‌ಗಳು</td>
+                    <td><span class="status pending">ಪ್ರಗತಿಯಲ್ಲಿದೆ</span></td>
+                    <td><a href="./docs/architecture.html" target="_blank">ಓಪನ್ ಮಾಡಿ</a></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>API ವಿವರಗಳು</td>
+                    <td>REST ಮತ್ತು GraphQL ಎಂಡ್‌ಪಾಯಿಂಟ್‌ಗಳು</td>
+                    <td><span class="status planned">ಯೋಜಿಸಲಾಗಿದೆ</span></td>
+                    <td><a href="./docs/api-spec.html" target="_blank">ಓಪನ್ ಮಾಡಿ</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
